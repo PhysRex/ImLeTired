@@ -1,0 +1,16 @@
+/*add outline borders to all elements - for design purposes*/
+* { 
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+body {
+  /*adds margins to the entire page*/
+	margin-left: 9%;
+	margin-right: 9%
+}
+
+h2 {
+  position: absolute;
+  top: 50px;
+  left: 75px;
+}

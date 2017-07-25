@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css?family=Patrick+Hand+SC|Fredericka+the+Great|Londrina+Shadow|Londrina+Solid|Text+Me+One|Megrim');
+
+.header {
+  display: none;
+}
+
+.slides * {
+  /*border: 1px solid red;*/
+  /*overflow: auto;*/
+}
+
+.slides {
+  position: relative;
+  top: 0;
+  margin: 6% 0 0 0;
+}
+
+@media only screen and (max-width: 500px) {
+  .slides {
+    position: initial;
+  }  
+}
+
+.figure-caption {
+  color: rgba(255, 255, 255, 0.95);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.85);
+
+  font-size: 3em;
+  line-height: 2em;
+  font-weight: bold;
+  font-family: 'Fredericka the Great', cursive;
+
+  /*border: 1px solid red;*/
+  /*background: rgba(255, 255, 255, 0.95);*/
+  /*border-radius: 5px;*/
+  /*width: 50%; */
+  margin: 0 auto 5px auto;
+
+  overflow: hidden;
+} 
+
+.frame {
+  min-height: 450px;
+  /*border: 1px solid blue;*/
+}
+
+.figure-img {
+  /*width: 100%;*/
+  height: 75vh;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 25%;
+  width: auto;
+  transition: 0.6s ease;
+  
+  height: 50%;
+  padding: 0px !important;
+
+  color: #FFF !important;
+  font-size: 2.5em !important;
+  font-weight: normal;
+  font-family: 'Londrina Solid', cursive;
+  /*background-color:rgba(0, 0, 0, 0.65) !important;*/
+  background: none !important;
+  border-radius: 0 0 3px 3px !important;
+  /*box-shadow: 0px 0px 2px 2px rgba(100, 100, 100, 0.75) !important;*/
+  
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.85);
+  line-height: 1px;
+}
+
+.prev:active, .next:active {
+  background-color:rgba(100, 100, 100, 0.55) !important;
+  text-decoration: none !important;
+}
+
+.prev {
+  /*border-radius: 50px 5px 5px 50px !important;  */
+  border-radius: 5px 0 0 5px !important;
+  margin: 0 0 0 5px;
+/*	width: 0;
+	height: 0;
+	border-top: 50px solid transparent !important;
+	border-right: 100px solid red !important;
+	border-bottom: 50px solid transparent !important;*/
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 0 5px 5px 0 !important;
+  /*border-radius: 5px 50px 50px 5px !important; */
+  margin: 0 5px 0 0;
+/*	width: 0;
+	height: 0;
+	border-top: 50px solid transparent !important;
+	border-left: 100px solid red !important;
+	border-bottom: 50px solid transparent !important;*/
+}
+
+@media only screen and (max-width: 500px) {
+  body {
+      /*background-color: lightblue;*/
+  }
+
+  .slides {
+    margin-top: 5vh;
+  }
+
+  .figure-img {
+    width: 85%;
+    height: auto;
+  }
+
+  .figure-caption {
+    width: 100%;
+    font-size: 2em;
+    margin: 1em auto 5px auto;
+  }
+
+  .frame {
+    height: 475px;
+    /*border: 1px solid red;*/
+  }
+
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    /*bottom: 0;*/
+    top: 80vh;
+    
+    /*width: auto;*/
+    transition: 0.6s ease;
+    
+    height: 10%;
+    /*background-color:rgba(0, 0, 0, 0.65) !important;*/
+    border: none;
+  }
+
+  .prev:active, .next:active {
+    background-color:rgba(0, 0, 0, 0.85) !important;
+  }
+
+  .prev {
+    /*border-radius: 50px 5px 5px 50px !important;  */
+    padding-right: 5px !important;
+    /*border: 1px solid red !important;*/
+  }
+
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+  }
+}
+
+
+

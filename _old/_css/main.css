@@ -1,0 +1,61 @@
+/*add outline borders to all elements - for design purposes*/
+* { 
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+/** Header styles **/
+
+body {
+  /*adds margins to the entire page*/
+	margin-left: 15%;
+	margin-right: 10%
+}
+
+.header {
+  background-image: url("https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-9/401298_910874453240_2022936363_n.jpg?oh=adecd63707d8fda21f746a8327eb3951&oe=58DC5D0A");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px;
+  width: 100%;
+}
+
+h1 { 
+  font-family: 'Covered By Your Grace', sans-serif;
+  font-size: 150px;
+  line-height: 76px;
+  margin: 0;
+  position: relative;
+  text-align: center;
+  vertical-align: center;
+  top: 20%;
+  color: rgb(3,150,100);
+  color: rgba(172,1,38,0.75);
+  background-color: lightgreen;
+  background-color: rgba(3,150,100,0.45);
+}
+
+h2 {
+  /*font-family: Gill Sans, Verdana;*/
+  font-family: Raleway;
+  font-size: 11px;
+  line-height: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 800;
+  /*margin: 10px;
+  padding: 10px 10px 6px 10px;*/
+  /*display: inline;*/
+  vertical-align: 10%;
+  position: relative; 
+  top: 200px; 
+  left: 0; 
+  width: 100%;  
+  text-align: right;
+}
+
+
+p {
+  font-size: 1em;
+  line-height: 1.3em;
+}

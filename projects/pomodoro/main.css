@@ -1,0 +1,167 @@
+body{
+	background-color: #000 !important;
+	color: #FFF;
+}
+
+.white {
+	background-color: #FFF;
+}
+
+.red {
+	background-color: #FE4438;
+	border: 1px solid #FE4438;
+}
+
+.red:hover {
+	background-color: #FE4438;
+	opacity: 0.8;
+	border: 1px solid #FE4438;
+}
+.container-fiuld {
+/* 	border: 1px solid blue; */
+}
+
+.row {
+/* 	border: 1px solid red; */
+}
+
+h1 {
+	font-family: 'VT323', monospace !important;
+/* 	font-family: 'Space Mono', monospace; */
+/* 	font-family: 'Press Start 2P', cursive; */
+	font-size: 15vw !important;
+	color: #FFF !important;
+}
+
+.digital {
+/* 	background-color: lightblue; */
+	font-family: 'Press Start 2P', cursive;
+  font-size: 15vw;
+	color: #FF0;
+}
+
+.session, .break {
+	font-family: 'Space Mono', monospace;
+}
+
+.analog, .reset {
+	margin-top: 10px;
+/* 	border: 1px solid lightgreen; */
+	font-family: 'VT323', monospace;
+  font-size: 7vw !important;
+	width: 100%;
+/* 	display: none; */
+}
+
+.btn-primary {
+	font-family: 'VT323', monospace;
+	font-size: 7vw !important;
+	min-width: 65px;
+}
+
+.btn, .btn-group {
+	border-radius: 0px;
+}
+
+.panel-title {
+	margin-top: 10px;
+  font-size: 4vw;	
+}
+
+.explain {
+	margin-top: 15px;
+}
+
+.tab {
+	margin-left: 10px;
+}
+
+.dblTab {
+	margin-left: 30px;
+}
+
+.card {
+	background-color: #000;
+}
+
+.card-title {
+	font-family: 'Patua One', cursive;
+	color: #0F0;
+  cursor: pointer;
+}
+
+.card-subtitle {
+	font-family: 'Space Mono', monospace;
+}
+
+.explText {
+/* 	font-family: 'Bungee Hairline', cursive; */	
+}
+
+.border-hide {
+	border: 0;
+}
+
+.hide, {
+	display: none;
+	
+}
+
+.cardText {
+/* 	font-family: 'Coda', cursive; */
+	font-family: 'Kelly Slab', cursive;
+/* 	font-weight: 100; */
+	line-height: 1.15;
+}
+
+@media all and (min-width: 755px) {
+	.row {
+/* 		border: 1px solid red; */
+	}
+	
+	h1 {
+		font-size: 75px;
+	}
+
+	.btn-primary {
+		font-size: 30px !important;
+	}
+	
+	.digital {
+		font-size: 125px !important;
+	}
+		
+	.analog, .reset {
+		font-size: 35px !important;
+	}
+		
+	.session, .break {
+		font-size: 20px !important;
+	}
+}
+
+
+/*  
+****************************
+ **** LINK PROPERTIES ****
+****************************
+*/	
+a:link {
+	background-color: #000;
+	color: #0F0;
+}
+
+a:active {
+	background-color: #0F0;
+	color: #000;
+}
+
+a:visited {
+	background-color: #000;
+	color: #080;
+}
+
+a:hover {
+	background-color: #0F0;
+	color: #000;
+}
