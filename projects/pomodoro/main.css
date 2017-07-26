@@ -1,29 +1,30 @@
-body{
-	background-color: #000;
-	color: #FFF;
+
+body {
+	/* border: 3px solid green;  */
+	height: 100vh;
+	background-color: #000 !important;
 }
 
-.white {
-	background-color: #FFF;
-}
-
-.red {
-	background-color: #FE4438;
-	border: 1px solid #FE4438;
-}
-
-.red:hover {
-	background-color: #FE4438;
-	opacity: 0.8;
-	border: 1px solid #FE4438;
-}
-.container-fiuld {
-/* 	border: 1px solid blue; */
+.container-fluid {
+ 	/* border: 1px solid yellow;  */
 }
 
 .row {
-/* 	border: 1px solid red; */
+ 	 /* border: 1px solid red;   */
 }
+
+.row>* {
+ 	 /* border: 1px solid green; */
+}
+
+.hide {
+	display: none;
+	
+}
+
+
+/*  #########################  */
+/* Header  */
 
 h1 {
 	font-family: 'VT323', monospace !important;
@@ -40,10 +41,6 @@ h1 {
 	color: #FF0;
 }
 
-.session, .break {
-	font-family: 'Space Mono', monospace;
-}
-
 .analog, .reset {
 	margin-top: 10px;
 /* 	border: 1px solid lightgreen; */
@@ -51,6 +48,21 @@ h1 {
   font-size: 7vw !important;
 	width: 100%;
 /* 	display: none; */
+}
+
+.white {
+	background-color: #FFF !important;
+}
+
+.red {
+	background-color: #FE4438 !important;
+	border: 1px solid #FE4438 !important;
+}
+
+.red:hover {
+	/* background-color: #FE4438; */
+	opacity: 0.8;
+	/* border: 1px solid #FE4438; */
 }
 
 .btn-primary {
@@ -63,13 +75,78 @@ h1 {
 	border-radius: 0px;
 }
 
-.panel-title {
+.session, .break {
+	color: #FFF;
+	font-family: 'Space Mono', monospace;
 	margin-top: 10px;
   font-size: 4vw;	
 }
 
+.session>* {
+	background-color: #000 !important;
+	border:1px solid #000 !important;
+}
+
+
+.line-break {	 
+	margin: 30px 0 0 0;
+	height: 1px;
+	background: black;
+	background: -webkit-gradient(linear, 0 0, 100% 0, from(#000), to(#000), color-stop(50%, #FFF));
+}
+
+
+/* ####################### */
+/* explanation of pomodoro */
+
 .explain {
 	margin-top: 15px;
+}
+
+.explain * {
+	background-color: #000;
+}
+
+.border-show {
+	border: 1px solid #AAA;
+}
+
+.explain-title {
+	background-color: #000 !important;
+	font-family: 'Patua One', cursive;
+	color: #0F0;
+	cursor: pointer;
+	
+	transition: all .35s ease-in;
+}
+
+.explain-title:hover {
+	color: fuchsia;
+}
+
+.explain-active {
+	/* opacity: 0.2; */
+	color: fuchsia;
+	transform: scale(1.2);
+}
+
+.explain-section {
+	padding: 10px;
+}
+
+.subtitle {	
+	color: #AAA;
+	font-family: 'Space Mono', monospace;
+	
+}
+
+.explText {
+	color: #AAA;
+/* 	font-family: 'Bungee Hairline', cursive; */	
+/* 	font-family: 'Coda', cursive; */
+	font-family: 'Kelly Slab', cursive;
+/* 	font-weight: 100; */
+	line-height: 1.15;
 }
 
 .tab {
@@ -80,39 +157,6 @@ h1 {
 	margin-left: 30px;
 }
 
-.card {
-	background-color: #000;
-}
-
-.card-title {
-	font-family: 'Patua One', cursive;
-	color: #0F0;
-  cursor: pointer;
-}
-
-.card-subtitle {
-	font-family: 'Space Mono', monospace;
-}
-
-.explText {
-/* 	font-family: 'Bungee Hairline', cursive; */	
-}
-
-.border-hide {
-	border: 0;
-}
-
-.hide, {
-	display: none;
-	
-}
-
-.cardText {
-/* 	font-family: 'Coda', cursive; */
-	font-family: 'Kelly Slab', cursive;
-/* 	font-weight: 100; */
-	line-height: 1.15;
-}
 
 @media all and (min-width: 755px) {
 	.row {
@@ -137,6 +181,10 @@ h1 {
 		
 	.session, .break {
 		font-size: 20px !important;
+	}
+
+	.explain-active {
+		transform: scale(1.5);
 	}
 }
 

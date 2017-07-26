@@ -162,9 +162,12 @@ var handler = {
 
 		}
 		
-		if (elementClicked.classList.contains("card-title")) {
-			var cardSection = document.querySelector(".card-section");
-			cardSection.classList.toggle("hide");
+		if (elementClicked.classList.contains("explain-title")) {
+			var explainSection = document.querySelector(".explain-section");
+			var explainTitle = document.querySelector(".explain-title");
+			explainSection.classList.toggle("hide");
+			explainSection.classList.toggle("border-show");
+			explainTitle.classList.toggle("explain-active");
 		}
 		
 		elementClicked.blur();
