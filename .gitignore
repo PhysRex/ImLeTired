@@ -39,4 +39,4 @@ Thumbs.db
 
 # Directories #
 ###############
-projects
+projects/*
