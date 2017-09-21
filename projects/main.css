@@ -107,17 +107,6 @@ projects, projects:before, projects:after {
   }
 }
 
-.panel * {
-  /*border-radius: 50%;  */
-  /*background-color: red;  */
-}
-
-.img-responsive {
-  /*background: none !important;*/
-  /*border: none !important;*/
-}
-
-
 @media only screen and (max-width: 500px) {
   .panel {
     opacity: 1;
